@@ -1,0 +1,1 @@
+*git flow init - iniciar o git-flow dentro de um repositório já existente
