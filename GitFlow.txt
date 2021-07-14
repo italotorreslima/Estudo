@@ -1,1 +1,9 @@
 *git flow init - iniciar o git-flow dentro de um repositório já existente
+*git flow feature start MYFEATURE - cria uma branch derivativa da develop para uma nova feature
+* git flow feature finish MYFEATURE  - mescla a feature com a develop e remove a branch da funcionalidade voltando apenas para a develop
+*git flow feature publish MYFEATURE  - para publicar uma funcionalidade em um servidor
+*git flow release start RELEASE [BASE]  - para iniciar uma nova versão baseada na develop
+*git flow release publish RELEASE - publica a release
+*git flow release finish RELEASE  - finalizar uma versão
+*git flow hotfix start VERSION [BASENAME] - para um conserto imediato em algo da versão de produção ativa(vai direto pra master)
+*git flow hotfix finish VERSION - finalizar a hotfix
