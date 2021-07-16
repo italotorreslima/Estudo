@@ -10,7 +10,7 @@
 *docker inspect {nome ou id do container} - lista parametros e propriedades do container
 *docker exec -it {id do container} bash - para começar a interagir com o banco
 *docker rmi - remove imagens pelo id
-
+*docker start - reinicia um container que havia sido exited
 ------------------------------------------------------------------------------------------------
 *mysql -u root - roda o sql no prompt
 
