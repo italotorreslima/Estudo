@@ -11,6 +11,7 @@
 *docker exec -it {id do container} bash - para começar a interagir com o banco
 *docker rmi - remove imagens pelo id
 *docker start - reinicia um container que havia sido exited
+*docker-compose up --build  - builda o projeto e sobe ele pro localhost
 ------------------------------------------------------------------------------------------------
 *mysql -u root - roda o sql no prompt
 
