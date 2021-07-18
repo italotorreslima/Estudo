@@ -13,4 +13,21 @@
 *docker start - reinicia um container que havia sido exited
 ------------------------------------------------------------------------------------------------
 *mysql -u root - roda o sql no prompt
+*CREATE DATABASE mydatabase
+ CHARACTER SET utf8
+ COLLATE utf8_general_ci; - cria um db com charset utf8
+ 
+*{create table alunos(
+nome varchar(30),
+serie int,
+altura decimal(5,2),
+sexo enum('M', 'F')
+);} - cria uma tabela 
 
+*alter table professores
+add column codigo int first; - altera a tabela adicionando um codigo do tipo int  na primeira posição da tabela
+
+*alter table professores
+add primary key (codigo); - altera a tabela gerando uma chave primaria com a variavel codigo
+
+*select * from alunos; - ver todas cedulas da tabela
