@@ -1,1 +1,4 @@
 *php artisan make:migration create_flights_table
+php artisan migrate  - para migrar o db
+*php artisan make:seeder PlacesTableSeeder - para gerar um seeder
+

@@ -1,0 +1,27 @@
+git init - cria um novo repositorio
+git add NomeDoArquivo - adiciona o arquivo na stage area
+git add . -adiciona todos os arquivos que não haviam sido adicionado na stage area
+git add *.txt - adiciona todos os arquivos txt que não haviam sido adicionado na stage area
+git diff - mostra as modificações desde op ultimo commit, mas so mostra as alterações dos arquivos ja commitados
+git commit -m "mensagem que sera posta no commit"-envia todos os arquivos que estão na stage area para o repositorio local
+git log -  is a utility tool to review and read a history of everything that happens to a repository, record commits
+git --staged - mostra os arquivos na stage area (pode ser usado --cached)
+git rm NomeDoArquivo - remove o arquivo permanentemente ate mesmo da lixeira
+git restore --staged NomeDoArquivo - retira o arquivo da stage area para a modified e também caso ele tenha sido deletado ele pode ser restaurado
+git mv NomeAtualDoArquivo NovoNomeDoArquivo - renomeia o arquivo
+git mv NomeDoArquivo NomeDaPasta/NomeDoArquivo - adicionar um arquivo em uma pasta
+git restore NomeDoArquivo - caso você tenha feito alguma modificação em um arquivo que estava na staged area ou ja tinha dado commit e se arrependeu é só usar esse comando que ele irá restaurar o comando
+git commit --amend -m "mensagem" - vai remendar algum erro de forma que a hash atual seja corrigida e não criada uma nova, dessa forma o id da hash também mudará
+git checkout <hash que você vai checar o arquivo> -- NomeDoArquivo - com esse comando você consegue checar um arquivo que foi commitado no passado
+git clean -f - força deletar arquivos que estao como untracked
+git commit -am "mensagem" - para commitar arquivos que ja estão sendo rastreados e foram feitas apenas alterações
+git show <inicio da hash do commit que você quer ver> - mostra todas as alterações que foram feitas naquele commit 
+git diff --colo-words - vai colorir as palavras que foram alteradas
+git rm -r --cached . -tira todos os arquivos do repositorio e joga para o working diretory
+vim NomeDoArquivo - acessa o arquivo para fazer modificações direto do cmd
+touch NomeDoArquivo - criar um arquivo com a terminação que você digitar no comando
+:wq - para sair do vim e voltar pro git
+ls -al - ve todos os arquivos da pasta
+git clone --single-branch --branch feature/modulo-atualizacao-empresas https://github.com/maximize/pdf.git  --  clona apenas uma branch do repositorio
+
+
