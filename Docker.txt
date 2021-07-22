@@ -12,5 +12,4 @@
 *docker rmi - remove imagens pelo id
 *docker start - reinicia um container que havia sido exited
 *docker-compose up --build  - builda o projeto e sobe ele pro localhost
-------------------------------------------------------------------------------------------------
-
+docker exec -it nome-do-container /bin/bash
