@@ -2,3 +2,4 @@
 php artisan migrate  - para migrar o db
 *php artisan make:seeder PlacesTableSeeder - para gerar um seeder
 *php artisan db:seed - para enviar as seeds para o DB
+*php artisan db:seed --class=UsersTaleSeeder - para semear através de um seed especifico 
