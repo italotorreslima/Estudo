@@ -24,4 +24,5 @@ touch NomeDoArquivo - criar um arquivo com a terminação que você digitar no c
 ls -al - ve todos os arquivos da pasta
 git clone --single-branch --branch feature/modulo-atualizacao-empresas https://github.com/maximize/pdf.git  --  clona apenas uma branch do repositorio
 git reset - retira o ultimo git add
+git clone --single-branch --branch <branchname> Host:/dir.git  - clonar uma branch especifica de um repo
 

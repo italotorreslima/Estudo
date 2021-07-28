@@ -1,5 +1,6 @@
 *php artisan make:migration create_flights_table
 php artisan migrate  - para migrar o db
+php artisan migrate:refresh --path=/database/migrations/fileName.php   -- para migrar um arquivo especifico
 *php artisan make:seeder PlacesTableSeeder - para gerar um seeder
 *php artisan db:seed - para enviar as seeds para o DB
 *php artisan db:seed --class=UsersTaleSeeder - para semear através de um seed especifico 

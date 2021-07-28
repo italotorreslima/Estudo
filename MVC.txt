@@ -1,0 +1,7 @@
+*é um padrão de arquitetura de software
+*Model-View-Controller - MVC
+*divisão em tres camadas para poder separar a interface do usuário das regras de negocio
+*reutilização de temas
+*Model - responsavel pelo acesso e manipulação dos dados da aplicação (ex. la estarão as funçoes de consulta ao BD)
+*view - ela é responsavel pela interface que sera apresentado ao usuario(ex. local onde ficam os codigos html)
+*controller - responsavel por fazer o intermedio entre o model e o view
