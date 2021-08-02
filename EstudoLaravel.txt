@@ -1,0 +1,10 @@
+----------------------Routes-------------------
+*\App\User::all() - retorna todos os usuarrios do bd
+*\App\User::find(3) - retorna o usuario através do id passado no parametro
+*\App\User::where('name', 'Italo Torres Lima')->get()  -retorna um array de resultados que batem com o que foi passado
+*\App\User;;paginate(10)  - pagina os dados apresentando a quantidade que você passar no parâmetro
+*$user = new \App\User();
+$user->name = 'Zeca Baleiro do piaui';
+$user->email='oioi@gmail.com';
+$user->save();  -cria através do Routes um novo "usaer" podendo ser qualquer outra coisa
+

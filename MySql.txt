@@ -17,3 +17,11 @@ add column codigo int first; - altera a tabela adicionando um codigo do tipo int
 add primary key (codigo); - altera a tabela gerando uma chave primaria com a variavel codigo
 
 *select * from alunos; - ver todas cedulas da tabela
+
+------------Criar phpMyAdmin e conectar com mysql---------------------
+*docker pull mysql:8.0.1
+*docker run --name my-own-mysql -e MYSQL_ROOT_PASSWORD=mypass123 -d mysql:8.0.1
+*docker pull phpmyadmin/phpmyadmin:latest
+*docker run --name my-own-phpmyadmin -d --link marketplace:db -p 8081:80 phpmyadmin/phpmyadmin
+ http://localhost:8081/
+----------------------------------------------------------------------
