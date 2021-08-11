@@ -1,0 +1,4 @@
+Sudo apt install openssh-client
+ssh-keygen -t rsa -C italotorreslima2002@gmail.com
+cat .ssh/id_rsa.pub     -para poder pegar a chave copiar e inserir no github
+ssh -T git@github.com      -para poder testar a sua chave
