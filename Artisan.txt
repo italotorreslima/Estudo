@@ -8,3 +8,4 @@ php artisan migrate:refresh --path=/database/migrations/fileName.php   -- para m
 *php artisan make:model Flight --migration  - cria um model ja com o migrations
 *php artisan migrate:refresh --seed  -- derruba e cria novamente todas as tabelas e faz os seeds
 *php artisan make:controller Site/ConselhoSubsecaoController  - cria um controller dentro da pasta site
+*php artisan storage:link  - para criar um link simbolico com a pasta storage para que ela possa ser acessada da web
