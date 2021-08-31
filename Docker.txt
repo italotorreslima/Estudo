@@ -1,8 +1,5 @@
-*docker image pull mysql:5.6 - baixa a imagem do mysql na versão determinada
-*docker container run myslq:5.6 - rodar o container (nao vai funcionar pq precisa das variaveis de ambiente)
-** -e significa que posteriormente viram as variaveis de ambiente para o docker
-*docker run -e MYSQL_ROOT_PASSWORD=root --name meu-mysql -p 3306:3306 mysql:5.6 - para rodar o container e definir uma senha que no caso será root e também o nome do bd e tambem refletir o localhost no container do host
-*docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name marketplace -p 3306:3306 mysql:5.6 - define sem senha
+*docker run docker/whalesay cowsay Hello_World  -  roda um container de teste que exibe uma mensagem no terminal
+*docker run -it ubuntu - roda o o container do ubuntu e da da para interagir com ele
 *docker images - para ver a listagem das imagens
 *docker ps -a - lista todos os containers que estao rodando
 *docker stop {nome ou id do container} - ele finaliza o container
@@ -12,4 +9,10 @@
 *docker rmi - remove imagens pelo id
 *docker start - reinicia um container que havia sido exited
 *docker-compose up --build  - builda o projeto e sobe ele pro localhost
-docker exec -it nome-do-container /bin/bash
+*docker exec -it nome-do-container /bin/bash
+*docker logs <nome ou id do container>  --serve para exibir os logs do container
+**flag -it significa integrated terminal ou interative
+**flag -d significa detached e serve para rodar o container em background 
+**flag --name nomeia o container
+**flag -f apos o comando logs significa follow e serve para acompanhar os logs do container
+

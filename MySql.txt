@@ -28,4 +28,7 @@ add primary key (codigo); - altera a tabela gerando uma chave primaria com a var
 *docker pull phpmyadmin/phpmyadmin:latest
 *docker run --name my-own-phpmyadmin -d --link marketplace:db -p 8081:80 phpmyadmin/phpmyadmin
  http://localhost:8081/
+-----------------variaveis de amvbiente do myql no docker---------------
+*docker run -e MYSQL_ROOT_PASSWORD=root --name meu-mysql -p 3306:3306 mysql:5.6 - para rodar o container e definir uma senha que no caso será root e também o nome do bd e tambem refletir o localhost no container do host
+*docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name marketplace -p 3306:3306 mysql:5.6 - define sem senha
 ----------------------------------------------------------------------
