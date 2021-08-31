@@ -21,6 +21,8 @@ add primary key (codigo); - altera a tabela gerando uma chave primaria com a var
 *GRANT ALL PRIVILEGES ON `brmalls`.* TO 'italo'@'localhost';  - dar para o usuario todas as permissoes no Banco de dados especificados
 *FLUSH PRIVILEGES;  -  limpa e recarrega as variaveis internas de cache
 *SET GLOBAL sql_mode = '';  -  
+*mysqldump -u {user} -p {database} > {nomeDoArquivo}.sql  -  Gerar um dump 
+*mysql -u {user} -p {database} < {nomeDoArquivoParaImportar}.sql  -  fazer um restore do database
 
 ------------Criar phpMyAdmin e conectar com mysql---------------------
 *docker pull mysql:8.0.1
