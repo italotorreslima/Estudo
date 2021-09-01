@@ -16,6 +16,7 @@ add column codigo int first; - altera a tabela adicionando um codigo do tipo int
 *alter table professores
 add primary key (codigo); - altera a tabela gerando uma chave primaria com a variavel codigo
 
+use nome-da-base-da-dados;
 *select * from alunos; - ver todas cedulas da tabela
 *CREATE USER 'italo'@'localhost' IDENTIFIED BY 'Isso_senha123';  - para criar um novo usuario
 *GRANT ALL PRIVILEGES ON `brmalls`.* TO 'italo'@'localhost';  - dar para o usuario todas as permissoes no Banco de dados especificados
