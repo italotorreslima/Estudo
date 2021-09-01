@@ -3,6 +3,7 @@
 *docker images - para ver a listagem das imagens
 *docker ps -a - lista todos os containers que estao rodando
 *docker stop {nome ou id do container} - ele finaliza o container
+*docker rmi <nome ou id da imagem>  - para excluir imagem
 *docker rm {nome ou id do container} - para remover um container
 *docker inspect {nome ou id do container} - lista parametros e propriedades do container
 *docker exec -it {id do container} bash - para começar a interagir com o banco
@@ -11,8 +12,15 @@
 *docker-compose up --build  - builda o projeto e sobe ele pro localhost
 *docker exec -it nome-do-container /bin/bash
 *docker logs <nome ou id do container>  --serve para exibir os logs do container
+*dockerr build -t <NomdeQueVoceDesejaDar>  - para nomear uma imagem durante o build
+*docker tag <id> <NomdeQueVoceDesejaDar>  - para renomear uma imagem ja criada
+*docker system prune  - remove containers, imagem e networks nao utilizados
+*docker cp <nomde do arquivo>:<path do arquivo> <local de destino do arquivo>
+*docker top <id ou nomde do container>  - para acomponhar os dados de processamento do container
+*docker inspect <nome ou id do container>  - para ver as informações de configuração do container
+*docker stats - verificar os processos e a memoria que esta sendo usada pelo docker
 **flag -it significa integrated terminal ou interative
 **flag -d significa detached e serve para rodar o container em background 
 **flag --name nomeia o container
 **flag -f apos o comando logs significa follow e serve para acompanhar os logs do container
-
+**flag --rm  - utilizada no comando run e implica em após o container parar de ser executado ele sera removido
